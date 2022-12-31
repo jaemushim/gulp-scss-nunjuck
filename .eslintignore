@@ -1,0 +1,4 @@
+src/js/libs/*.js
+dist/js/libs/*.js
+src/css/libs/*.{css,scss}
+dist/css/libs/*.{css,scss}

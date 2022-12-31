@@ -1,0 +1,12 @@
+<!-- prettier-ignore -->
+{% set pageName = '서브페이지1-1' %} 
+{% set depth1List = ['메뉴1', '메뉴2','메뉴3'] %}
+{% set depth2List = ['메뉴1', '메뉴2', '메뉴3'] %}
+{% set depth3List = menu[0].children[1].children %}
+{% set depth3Active = 0 %}
+{% extends "layouts/sub-page-layout.html" %}
+{%block content %}
+
+<p>서브페이지 예시 1-1</p>
+
+{% endblock %}

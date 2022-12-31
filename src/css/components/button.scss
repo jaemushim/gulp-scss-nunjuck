@@ -1,0 +1,13 @@
+.btn {
+  &:not(.btn--not-hover):hover {
+    background-image: linear-gradient(rgb(0 0 0/3%) 0 0);
+  }
+  &:not(.btn--not-hover):active {
+    background-image: linear-gradient(rgb(0 0 0/6%) 0 0);
+  }
+
+  &--brand {
+    background: red;
+    color: white;
+  }
+}

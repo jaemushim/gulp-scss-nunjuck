@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% include "partials/head.html" %}
+
+    <title>{{ pageName }} | ㅇㅇㅇ홈페이지</title>
+  </head>
+  <body>
+    <div id="wrap" class="wrap">
+      <div class="skip-menu">
+        <a href="#container" class="skip-menu__link">본문내용 바로가기</a>
+        <a href="#menu" class="skip-menu__link">메인메뉴 바로가기</a>
+      </div>
+      {% include "partials/header.html" %}
+
+      <main class="main">
+        {% block content %}{% endblock %}
+      </main>
+
+      {% include "partials/footer.html" %}
+    </div>
+
+    <!-- scroll to top button -->
+    <button type="button" id="scroll-to-top" class="scroll-to-top scroll-to-top--show">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red">
+        <path d="M12 7V21" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 11L12 7" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 11L12 7" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 3L5 3" stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  font-family: 'SUIT', 'Helvetica', 'Arial';
+  font-weight: 500;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+main {
+  min-height: 600px;
+}
+
+span,
+a,
+img {
+  display: inline-block;
+}
+
+svg {
+  display: inline-block;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+table {
+  width: 100%;
+}
+
+caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
